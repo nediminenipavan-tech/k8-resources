@@ -1,0 +1,13 @@
+kind: pod 
+apiVersion: v1
+metadata:
+  name: env-demo 
+spec:
+   containers:
+   - name: nginx
+     image: nginx
+     env:
+     - name: cource 
+       value: kubernetes
+     - name: trainer
+       value: sivakumar 
