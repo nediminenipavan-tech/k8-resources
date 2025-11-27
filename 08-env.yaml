@@ -7,7 +7,7 @@ spec:
    - name: nginx
      image: nginx
      env:
-     - name: cource 
+     - name: course 
        value: kubernetes
      - name: trainer
        value: sivakumar 
