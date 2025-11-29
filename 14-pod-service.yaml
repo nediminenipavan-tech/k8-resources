@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: pod
+metadata:
+   name: service-demo
+   # There labels are used to register this pod with service 
+   labels:
+       project: roboshop
+      #  component: forntend
+      #  environment: dev
+   spec:
+     containers:
+     - name: nginx
+       image: nginx 
