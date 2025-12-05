@@ -13,7 +13,7 @@ spec:
     driver: ebs.csi.aws.com
     fsType: ext4
     volumeHandle: vol-0970036cd9c0d8eba 
-
+---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -26,7 +26,7 @@ spec:
   resources:
     requests:
       storage: 15Gi
-
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -46,7 +46,7 @@ spec:
   - name: nginx-html
     persistentVolumeClaim:
        claimName: ebs-static
-
+---
 apiVersion: v1
 kind: Service
 metadata:
